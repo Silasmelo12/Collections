@@ -1,9 +1,6 @@
 package Listas;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class Listas {
 //        List notas = new ArrayList(); // antes do Java 5
@@ -108,10 +105,19 @@ public class Listas {
         System.out.println(gatos);
 
         System.out.println("ordem idade");
+        Collections.sort(gatos,new ComparatorIdade());
+        gatos.sort(new ComparatorIdade());
+        System.out.println(gatos);
 
-        System.out.println("ordem cor");
+        System.out.println("ordem cor");//primeira letra.
+        Collections.sort(gatos,new ComparatorCor());
+        gatos.sort(new ComparatorCor());
+        System.out.println(gatos);
 
         System.out.println("ordem nome/cor/idade");
+        Collections.sort(gatos,new ComparatorNomeCorIdade());
+        gatos.sort(new ComparatorNomeCorIdade());
+        System.out.println(gatos);
 
     }
 
@@ -164,5 +170,41 @@ class Gato implements Comparable<Gato>{
     @Override
     public int compareTo(Gato gato) {
         return this.getNome().compareToIgnoreCase(gato.nome);
+    }
+}
+
+class ComparatorIdade implements Comparator<Gato>{
+
+    @Override
+    public int compare(Gato gato1, Gato gato2) {
+        return Integer.compare(gato1.getIdade(),gato2.getIdade());
+    }
+}
+
+class ComparatorCor implements Comparator<Gato>{
+
+    @Override
+    public int compare(Gato gato1, Gato gato2) {
+        return gato1.getCor().compareToIgnoreCase(gato2.getNome());
+    }
+}
+
+class ComparatorNomeCorIdade implements Comparator<Gato>{
+
+    @Override
+    public int compare(Gato gato1, Gato gato2) {
+        int nome = gato1.getNome().compareToIgnoreCase(gato2.getNome());
+        if(nome != 0){
+            return nome;
+        }
+
+        int cor = gato1.getCor().compareToIgnoreCase(gato2.getCor());
+
+        if (cor != 0){
+            return cor;
+        }
+
+        int idade = Integer.compare(gato1.getIdade(),gato2.getIdade());
+        return idade;
     }
 }
