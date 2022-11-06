@@ -110,6 +110,13 @@ public class InterfaceSet {
             System.out.println(serie.getNome()+", ");
         });
 
+        System.out.println("\n\nOrdem pelo nome");
+        Set<Serie> seriesTree4 = new TreeSet<>(new ComparatorGenero());
+        seriesTree4.addAll(series);
+        seriesTree4.forEach(serie -> {
+            System.out.println(serie.getGenero()+", ");
+        });
+
         System.out.println("\n\nordem nome/genero/tempo");
         Set<Serie> seriesTree2 = new TreeSet<Serie>(new ComparatorNomeGeneroTempo());
         seriesTree2.addAll(series);
