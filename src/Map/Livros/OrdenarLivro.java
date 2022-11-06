@@ -1,6 +1,5 @@
 package Map.Livros;
 
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -12,7 +11,11 @@ public class OrdenarLivro {
         put("Harari, Yuval Noah",new Livro("21 lições para o século 21",432));
 
     }};
-//    System.out.println("ordem aleatoria");
+
+    public void ordemAleatoria(){
+        System.out.println("ordem aleatoria");
+        System.out.println(livros);
+    }
 //    System.out.println("ordem de insercao");
 //    System.out.println("ordem natural (Nome)"); //  ordenar pela quantidad ede caracteres do nome
 }

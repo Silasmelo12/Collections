@@ -1,4 +1,4 @@
-import Map.Carros.CarrosPopulares;
+import Map.Livros.OrdenarLivro;
 
 public class Main {
     public static void main(String[] args) {
@@ -34,7 +34,6 @@ public class Main {
 //        carrosPopulares.exibirOrdenadoChave();
 //        carrosPopulares.limparConjunto();
 //        carrosPopulares.verificaListaVazia();
-
 //        MediaTemperatura mediaTemperatura = new MediaTemperatura();
 //        List<Double> temperaturas = mediaTemperatura.lerTemperaturas();
 //        Double media = mediaTemperatura.mediaSemestral(temperaturas);
@@ -42,7 +41,8 @@ public class Main {
 //        mediaTemperatura.TemperaturaAcimaMedia(temperaturas,media);
 //        Crime crime = new Crime();
 //        System.out.println(crime.classificar(crime.fazerPerguntas()));
-
+        OrdenarLivro ordenarLivro = new OrdenarLivro();
+        ordenarLivro.ordemAleatoria();
     }
 
 }
