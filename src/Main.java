@@ -1,3 +1,4 @@
+import Map.Carros.CarrosPopulares;
 import Set.FavoritaLinguagem.Ordenar;
 
 public class Main {
@@ -15,12 +16,19 @@ public class Main {
 //        arcoIris.limparConjunto();
 //        arcoIris.conferirConjuntoVazio();
 //        interfaceSet.exemplo_ordenacao_list();
-        Ordenar linguagemFavorita = new Ordenar();
-        linguagemFavorita.ordemInsercao();
-        linguagemFavorita.ordemNaturalNome();
-        linguagemFavorita.ordemNaturalAnoCriacao();
-        linguagemFavorita.ordemNaturalIde();
-        linguagemFavorita.ordemNaturalNomeAnoIde();
+//        Ordenar linguagemFavorita = new Ordenar();
+//        linguagemFavorita.ordemInsercao();
+//        linguagemFavorita.ordemNaturalNome();
+//        linguagemFavorita.ordemNaturalAnoCriacao();
+//        linguagemFavorita.ordemNaturalIde();
+//        linguagemFavorita.ordemNaturalNomeAnoIde();
+        CarrosPopulares carrosPopulares = new CarrosPopulares();
+        carrosPopulares.exibirCarrosPopulares();
+        carrosPopulares.substituirConsumoGol();
+        carrosPopulares.verificarTucson();
+        carrosPopulares.modeloMaisEconomico();
+        carrosPopulares.modeloMenosEconomico();
+
 
 //        MediaTemperatura mediaTemperatura = new MediaTemperatura();
 //        List<Double> temperaturas = mediaTemperatura.lerTemperaturas();
