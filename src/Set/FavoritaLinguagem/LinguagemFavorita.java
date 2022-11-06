@@ -1,4 +1,4 @@
-package FavoritaLinguagem;
+package Set.FavoritaLinguagem;
 
 public class LinguagemFavorita {
     private String nome;

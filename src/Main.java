@@ -1,4 +1,4 @@
-import FavoritaLinguagem.Ordenar;
+import Set.FavoritaLinguagem.Ordenar;
 
 public class Main {
     public static void main(String[] args) {

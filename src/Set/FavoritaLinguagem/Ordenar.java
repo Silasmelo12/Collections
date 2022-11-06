@@ -1,4 +1,4 @@
-package FavoritaLinguagem;
+package Set.FavoritaLinguagem;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
