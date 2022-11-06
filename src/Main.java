@@ -1,14 +1,21 @@
-import Listas.ExercicioProposto.Crime;
-import Set.InterfaceSet;
-import Set.Serie;
+import Set.ArcoIris.Manipulador;
+import Set.Serie.InterfaceSet;
 
 public class Main {
     public static void main(String[] args) {
         //Listas listas = new Listas();
         //listas.exemplo_ordenacao_list();
-        InterfaceSet interfaceSet = new InterfaceSet();
-
-        interfaceSet.exemplo_ordenacao_list();
+        Manipulador arcoIris = new Manipulador();
+//        InterfaceSet interfaceSet = new InterfaceSet();
+        arcoIris.ExibirCores();
+        arcoIris.quantidadeCores();
+        arcoIris.exibirCoresOrdemAlfabetica();
+        arcoIris.exibirCoresInversamente();
+        arcoIris.exibirCoresIniciaV();
+        arcoIris.removerCoresNaoIniciaV();
+        arcoIris.limparConjunto();
+        arcoIris.conferirConjuntoVazio();
+//        interfaceSet.exemplo_ordenacao_list();
 
 //        MediaTemperatura mediaTemperatura = new MediaTemperatura();
 //        List<Double> temperaturas = mediaTemperatura.lerTemperaturas();

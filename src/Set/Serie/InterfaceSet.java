@@ -1,4 +1,4 @@
-package Set;
+package Set.Serie;
 
 import java.util.*;
 
