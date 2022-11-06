@@ -103,14 +103,12 @@ public class InterfaceSet {
             System.out.print(serie.getTempoEp()+", ");
         });
 
-        System.out.println("\n\nordem idade");
 
-
-        System.out.println("ordem cor");//primeira letra.
-
-
-        System.out.println("ordem nome/cor/idade");
-
-
+        System.out.println("\n\nordem nome/genero/tempo");
+        Set<Serie> seriesTree2 = new TreeSet<Serie>(new ComparatorNomeGeneroTempo());
+        seriesTree2.addAll(series);
+        seriesTree2.forEach(serie -> {
+            System.out.print(serie.getTempoEp()+", ");
+        });
     }
 }
