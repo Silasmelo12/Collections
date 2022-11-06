@@ -33,7 +33,6 @@ public class MediaTemperatura {
         //List<String> mesElevado = new ArrayList<>();
         System.out.println("\nAs temperaturas acima da média são: ");
         for (int i =0; i<temperaturas.size();i++){
-
             if (temperaturas.get(i) > media) {
                 //temperaturasElevada.add(temperaturas.get(i));
                 //mesElevado.add(meses.get(i));

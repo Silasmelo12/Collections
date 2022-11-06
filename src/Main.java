@@ -1,3 +1,4 @@
+import ExercicioProposto.Crime;
 import ExercicioProposto.MediaTemperatura;
 import Listas.Listas;
 
@@ -8,12 +9,13 @@ public class Main {
         //Listas listas = new Listas();
         //listas.exemplo_ordenacao_list();
 
-        MediaTemperatura mediaTemperatura = new MediaTemperatura();
-        List<Double> temperaturas = mediaTemperatura.lerTemperaturas();
-        Double media = mediaTemperatura.mediaSemestral(temperaturas);
-        System.out.println("\nA média semestral é: \n" + media);
-        mediaTemperatura.TemperaturaAcimaMedia(temperaturas,media);
-
+//        MediaTemperatura mediaTemperatura = new MediaTemperatura();
+//        List<Double> temperaturas = mediaTemperatura.lerTemperaturas();
+//        Double media = mediaTemperatura.mediaSemestral(temperaturas);
+//        System.out.println("\nA média semestral é: \n" + media);
+//        mediaTemperatura.TemperaturaAcimaMedia(temperaturas,media);
+        Crime crime = new Crime();
+        System.out.println(crime.classificar(crime.fazerPerguntas()));
     }
 
 }
