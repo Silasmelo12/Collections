@@ -1,21 +1,26 @@
-import Set.ArcoIris.Manipulador;
-import Set.Serie.InterfaceSet;
+import FavoritaLinguagem.Ordenar;
 
 public class Main {
     public static void main(String[] args) {
-        //Listas listas = new Listas();
-        //listas.exemplo_ordenacao_list();
-        Manipulador arcoIris = new Manipulador();
+//        Listas listas = new Listas();
+//        listas.exemplo_ordenacao_list();
+//        Manipulador arcoIris = new Manipulador();
 //        InterfaceSet interfaceSet = new InterfaceSet();
-        arcoIris.ExibirCores();
-        arcoIris.quantidadeCores();
-        arcoIris.exibirCoresOrdemAlfabetica();
-        arcoIris.exibirCoresInversamente();
-        arcoIris.exibirCoresIniciaV();
-        arcoIris.removerCoresNaoIniciaV();
-        arcoIris.limparConjunto();
-        arcoIris.conferirConjuntoVazio();
+//        arcoIris.ExibirCores();
+//        arcoIris.quantidadeCores();
+//        arcoIris.exibirCoresOrdemAlfabetica();
+//        arcoIris.exibirCoresInversamente();
+//        arcoIris.exibirCoresIniciaV();
+//        arcoIris.removerCoresNaoIniciaV();
+//        arcoIris.limparConjunto();
+//        arcoIris.conferirConjuntoVazio();
 //        interfaceSet.exemplo_ordenacao_list();
+        Ordenar linguagemFavorita = new Ordenar();
+        linguagemFavorita.ordemInsercao();
+        linguagemFavorita.ordemNaturalNome();
+        linguagemFavorita.ordemNaturalAnoCriacao();
+        linguagemFavorita.ordemNaturalIde();
+        linguagemFavorita.ordemNaturalNomeAnoIde();
 
 //        MediaTemperatura mediaTemperatura = new MediaTemperatura();
 //        List<Double> temperaturas = mediaTemperatura.lerTemperaturas();

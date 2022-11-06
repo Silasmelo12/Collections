@@ -1,4 +1,4 @@
-package LinguagemFavorita;
+package FavoritaLinguagem;
 
 import java.util.Comparator;
 

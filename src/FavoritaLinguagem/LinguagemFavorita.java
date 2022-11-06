@@ -1,4 +1,4 @@
-package LinguagemFavorita;
+package FavoritaLinguagem;
 
 public class LinguagemFavorita {
     private String nome;
