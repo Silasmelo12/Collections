@@ -43,6 +43,8 @@ public class Main {
 //        System.out.println(crime.classificar(crime.fazerPerguntas()));
         OrdenarLivro ordenarLivro = new OrdenarLivro();
         ordenarLivro.ordemAleatoria();
+        ordenarLivro.ordemInsercao();
+        ordenarLivro.ordemAlfabeticaAutores();
     }
 
 }
