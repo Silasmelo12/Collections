@@ -1,9 +1,6 @@
-package ExercicioProposto;
-
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+package Listas.ExercicioProposto;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class MediaTemperatura {
     final List<String> meses = new ArrayList<>(Arrays.asList("1 - Janeiro", "2 - Fevereiro", "3 - Março", "4 - Abril", "5 - Maio", "6 - Junho"));
