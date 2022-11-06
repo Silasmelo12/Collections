@@ -1,5 +1,4 @@
 import Map.Carros.CarrosPopulares;
-import Set.FavoritaLinguagem.Ordenar;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,13 +21,19 @@ public class Main {
 //        linguagemFavorita.ordemNaturalAnoCriacao();
 //        linguagemFavorita.ordemNaturalIde();
 //        linguagemFavorita.ordemNaturalNomeAnoIde();
-        CarrosPopulares carrosPopulares = new CarrosPopulares();
-        carrosPopulares.exibirCarrosPopulares();
-        carrosPopulares.substituirConsumoGol();
-        carrosPopulares.verificarTucson();
-        carrosPopulares.modeloMaisEconomico();
-        carrosPopulares.modeloMenosEconomico();
-
+//        CarrosPopulares carrosPopulares = new CarrosPopulares();
+//        carrosPopulares.exibirCarrosPopulares();
+//        carrosPopulares.substituirConsumoGol();
+//        carrosPopulares.verificarTucson();
+//        carrosPopulares.modeloMaisEconomico();
+//        carrosPopulares.modeloMenosEconomico();
+//        carrosPopulares.somaConsumo();
+//        carrosPopulares.mediaConsumo();
+//        carrosPopulares.removerModelo();
+//        carrosPopulares.exibirOrdenadoAdicionado();
+//        carrosPopulares.exibirOrdenadoChave();
+//        carrosPopulares.limparConjunto();
+//        carrosPopulares.verificaListaVazia();
 
 //        MediaTemperatura mediaTemperatura = new MediaTemperatura();
 //        List<Double> temperaturas = mediaTemperatura.lerTemperaturas();

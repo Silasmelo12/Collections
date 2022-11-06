@@ -70,13 +70,65 @@ public class CarrosPopulares {
         }
     }
 
-    public void exibirSomaConsumo(){
+    public void somaConsumo(){
         Double soma = 0d;
         Iterator<Double> iterator = carrosPopulares.values().iterator();
         while (iterator.hasNext()){
             Double next = iterator.next();
             soma+=next;
         }
-        System.out.println("Soma de consumo: "+soma);
+        System.out.println("Soma do consumo: "+soma);
+    }
+    public void mediaConsumo(){
+        Double soma = 0d;
+        Iterator<Double> iterator = carrosPopulares.values().iterator();
+        while (iterator.hasNext()){
+            soma+=iterator.next();
+        }
+        System.out.println("Media de consumo: "+soma/carrosPopulares.size());
+    }
+
+    public void removerModelo(){
+        Iterator<Double> iterator = carrosPopulares.values().iterator();
+        while (iterator.hasNext()){
+            Double next = iterator.next();
+            if (next.equals(15.6)){
+                iterator.remove();
+            }
+        }
+        System.out.println(carrosPopulares);
+    }
+
+    public void exibirOrdenadoAdicionado(){
+        //para fazer isso, o conjunto precisa ser LinkedHashMap
+        Map<String,Double> carrosPopulares = new LinkedHashMap<String, Double>(){{
+            put("gol",14.4);
+            put("uno",15.6);
+            put("mobi",16.1);
+            put("hb20",14.5);
+            put("kwid",15.6);
+        }};
+        System.out.println(carrosPopulares);
+    }
+
+    public void exibirOrdenadoChave(){
+        // para fazer isso, precisa ser TreeMap
+        Map<String,Double> carrosPopulares = new TreeMap<String, Double>(){{
+            put("gol",14.4);
+            put("uno",15.6);
+            put("mobi",16.1);
+            put("hb20",14.5);
+            put("kwid",15.6);
+        }};
+        System.out.println(carrosPopulares);
+    }
+
+    public void limparConjunto(){
+        carrosPopulares.clear();
+    }
+
+    public void verificaListaVazia(){
+        if (carrosPopulares.isEmpty()) System.out.println("Lista vazia");
+        else System.out.println("Lista não vazia");
     }
 }
