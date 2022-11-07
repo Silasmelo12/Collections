@@ -46,6 +46,7 @@ public class Main {
         ordenarLivro.ordemInsercao();
         ordenarLivro.ordemAlfabeticaAutores();
         ordenarLivro.ordenarNome();
+        ordenarLivro.ordenarPagina();
     }
 
 }

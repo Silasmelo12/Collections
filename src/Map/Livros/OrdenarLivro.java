@@ -50,4 +50,13 @@ public class OrdenarLivro {
             System.out.println(l.getValue().getNome());
         });
     }
+
+    public void ordenarPagina(){
+        Set<Map.Entry<String,Livro>> entries = new TreeSet<>(new ComparatorPagina());
+        entries.addAll(livros.entrySet());
+        System.out.println("Ordem por página");
+        entries.forEach(l -> {
+            System.out.println(l.getValue().getPaginas());
+        });
+    }
 }
