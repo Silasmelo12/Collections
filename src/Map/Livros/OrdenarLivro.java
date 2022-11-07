@@ -42,4 +42,12 @@ public class OrdenarLivro {
             System.out.println(l.getKey());
         });
     }
+
+    public void ordenarNome(){
+        Set<Map.Entry<String,Livro>> entries = new TreeSet<>(new ComparatorNome());
+        entries.addAll(livros.entrySet());
+        entries.forEach(l->{
+            System.out.println(l.getValue().getNome());
+        });
+    }
 }
