@@ -73,6 +73,18 @@ public class PopulacaoEstado {
 
         System.out.println("Média populacional: "+soma/populacao.size());
 
+        System.out.println("Remover estados com populacao menor que 4.000.000");
+        Iterator<Long> iterator1 = populacao.values().iterator();
+        while (iterator1.hasNext()){
+            if(iterator1.next()<=4000000l){
+                iterator1.remove();
+            }
+        }
+        entries = populacao.entrySet();
+        entries.forEach(l->{
+            System.out.println(l.getKey()+" - "+l.getValue());
+        });
+
     }
 
 }
