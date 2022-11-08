@@ -71,6 +71,8 @@ public class PopulacaoEstado {
         }
         System.out.println(soma);
 
+        System.out.println("Média populacional: "+soma/populacao.size());
+
     }
 
 }
