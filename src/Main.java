@@ -51,6 +51,7 @@ public class Main {
 //        populacaoEstado.manipulador();
         LancaDados100 lancaDados100 = new LancaDados100();
         lancaDados100.lancar();
+        lancaDados100.contagem();
     }
 
 }
