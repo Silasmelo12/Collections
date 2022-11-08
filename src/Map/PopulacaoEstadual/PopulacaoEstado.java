@@ -1,8 +1,6 @@
-package Map;
+package Map.PopulacaoEstadual;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class PopulacaoEstado {
 
@@ -39,6 +37,30 @@ public class PopulacaoEstado {
         });
 
         System.out.println("Exibe apenas a população de pernambuco: "+populacao.get("PE"));
+
+        System.out.println("Ordem alfabética");
+        entries = new TreeMap<String,Long>(populacao).entrySet();
+        entries.forEach(l -> {
+            System.out.println(l.getKey() + " = " + l.getValue());
+        });
+
+        System.out.println("Estado com mebor população.");
+        Long min = Collections.min(populacao.values());
+        entries = populacao.entrySet();
+        entries.forEach(l->{
+            if(l.getValue().equals(min.longValue())){
+                System.out.println(l.getKey()+" = "+l.getValue());
+            }
+        });
+
+        System.out.println("Estado com maior população");
+        Long max = Collections.max(populacao.values());
+        entries = populacao.entrySet();
+        entries.forEach(l->{
+            if(l.equals(max.longValue())){
+                System.out.println(l.getKey()+" = "+l.getValue());
+            }
+        });
 
     }
 
