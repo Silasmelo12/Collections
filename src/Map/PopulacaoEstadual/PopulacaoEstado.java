@@ -87,7 +87,7 @@ public class PopulacaoEstado {
 
         System.out.println("Apagar todos os estados");
         populacao.clear();
-        
+
         System.out.println("Verificar se a lista está vazia: "+populacao.isEmpty());
     }
 

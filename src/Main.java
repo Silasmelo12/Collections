@@ -1,3 +1,4 @@
+import Map.LancaDados100;
 import Map.PopulacaoEstadual.PopulacaoEstado;
 
 public class Main {
@@ -47,8 +48,10 @@ public class Main {
 //        ordenarLivro.ordemAlfabeticaAutores();
 //        ordenarLivro.ordenarNome();
 //        ordenarLivro.ordenarPagina();
-        PopulacaoEstado populacaoEstado = new PopulacaoEstado();
-        populacaoEstado.manipulador();
+//        PopulacaoEstado populacaoEstado = new PopulacaoEstado();
+//        populacaoEstado.manipulador();
+        LancaDados100 lancaDados100 = new LancaDados100();
+        lancaDados100.lancar();
     }
 
 }
