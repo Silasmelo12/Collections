@@ -62,6 +62,15 @@ public class PopulacaoEstado {
             }
         });
 
+        System.out.println("Soma da população dos estados");
+        long soma = 0;
+        entries = populacao.entrySet();
+        Iterator<Map.Entry<String, Long>> iterator = entries.iterator();
+        while (iterator.hasNext()) {
+            soma += iterator.next().getValue();
+        }
+        System.out.println(soma);
+
     }
 
 }
