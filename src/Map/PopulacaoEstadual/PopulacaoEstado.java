@@ -44,7 +44,7 @@ public class PopulacaoEstado {
             System.out.println(l.getKey() + " = " + l.getValue());
         });
 
-        System.out.println("Estado com mebor população.");
+        System.out.println("Estado com menor população.");
         Long min = Collections.min(populacao.values());
         entries = populacao.entrySet();
         entries.forEach(l->{
@@ -57,7 +57,7 @@ public class PopulacaoEstado {
         Long max = Collections.max(populacao.values());
         entries = populacao.entrySet();
         entries.forEach(l->{
-            if(l.equals(max.longValue())){
+            if(l.getValue().equals(max.longValue())){
                 System.out.println(l.getKey()+" = "+l.getValue());
             }
         });
