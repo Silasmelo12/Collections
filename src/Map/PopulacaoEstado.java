@@ -38,6 +38,8 @@ public class PopulacaoEstado {
             System.out.println(l.getKey() + " = " + l.getValue());
         });
 
+        System.out.println("Exibe apenas a população de pernambuco: "+populacao.get("PE"));
+
     }
 
 }
