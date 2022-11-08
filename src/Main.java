@@ -1,4 +1,5 @@
 import Map.Livros.OrdenarLivro;
+import Map.PopulacaoEstado;
 
 public class Main {
     public static void main(String[] args) {
@@ -41,12 +42,14 @@ public class Main {
 //        mediaTemperatura.TemperaturaAcimaMedia(temperaturas,media);
 //        Crime crime = new Crime();
 //        System.out.println(crime.classificar(crime.fazerPerguntas()));
-        OrdenarLivro ordenarLivro = new OrdenarLivro();
-        ordenarLivro.ordemAleatoria();
-        ordenarLivro.ordemInsercao();
-        ordenarLivro.ordemAlfabeticaAutores();
-        ordenarLivro.ordenarNome();
-        ordenarLivro.ordenarPagina();
+//        OrdenarLivro ordenarLivro = new OrdenarLivro();
+//        ordenarLivro.ordemAleatoria();
+//        ordenarLivro.ordemInsercao();
+//        ordenarLivro.ordemAlfabeticaAutores();
+//        ordenarLivro.ordenarNome();
+//        ordenarLivro.ordenarPagina();
+        PopulacaoEstado populacaoEstado = new PopulacaoEstado();
+        populacaoEstado.manipulador();
     }
 
 }
