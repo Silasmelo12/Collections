@@ -1,5 +1,4 @@
-import Map.LancaDados100;
-import Map.PopulacaoEstadual.PopulacaoEstado;
+import Map.LancaDados.LancaDados100;
 
 public class Main {
     public static void main(String[] args) {
